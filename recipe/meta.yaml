@@ -12,15 +12,15 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - attrs >=17.1
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - attrs >=17.1
 
 test:
@@ -28,6 +28,7 @@ test:
     - pip
     - pytest
     - pytest-timeout
+    - python {{ python_min }}
   imports:
     - stdio_mgr
   source_files:
