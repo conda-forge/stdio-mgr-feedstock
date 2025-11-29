@@ -1,5 +1,5 @@
 {% set name = "stdio-mgr" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/bskinn/stdio-mgr/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b70044b1b31b9be3935d0b1e3ada3d713f7274d2124ffff42195e1fdac0a4029
+  sha256: 6568a823e31481a19c2039557aad5de76072e56140e3498329162ef605077780
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
