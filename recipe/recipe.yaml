@@ -22,7 +22,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - setuptools
+    - setuptools>77
     - attrs >=17.1
   run:
     - python >=${{ python_min }}
