@@ -35,6 +35,7 @@ tests:
       python_version: ${{ python_min }}.*
   - files:
       source:
+        - README.md
         - conftest.py
         - tests/
     requirements:
