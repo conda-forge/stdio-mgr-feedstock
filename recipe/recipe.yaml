@@ -45,7 +45,7 @@ tests:
         - python ${{ python_min }}.*
     script:
       - pip check
-      - pytest -v -rsxX -p no:warnings --doctest-glob="README.rst"
+      - pytest -v -rsxX -p no:warnings --doctest-glob="README.md"
 
 about:
   summary: Context manager for mocking/wrapping stdin/stdout/stderr
